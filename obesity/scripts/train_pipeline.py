@@ -10,7 +10,6 @@ import obesity.scripts.config as config
 from obesity.scripts.data_management import load_dataset
 from obesity.scripts.data_management import save_model
 import obesity.scripts.pipeline as pipeline
-from sklearn.model_selection import train_test_split
 
 
 def train_pipeline():
