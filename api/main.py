@@ -15,13 +15,14 @@ from fastapi import FastAPI
 import obesity.scripts.predict as ML_predict
 from fastapi.encoders import jsonable_encoder
 from api.schemas.predict_schema import MultipleObesityInputSchema, PredictionResults
+import starlette.responses as _responses
 
 
 app = FastAPI()
 
 @app.get('/')
 async def index():
-    return {'message': 'Welcome to my ML API'}
+    return _responses.RedirectResponse("/docs")
 
 @app.post('/predict', response_model=PredictionResults)
 async def predict(input_data: MultipleObesityInputSchema):
