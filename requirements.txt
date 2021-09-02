@@ -117,9 +117,7 @@ rope==0.19.0
 Rtree==0.9.7
 scikit-learn==0.23.2
 scipy==1.6.2
-seaborn==0.11.2
 Send2Trash==1.5.0
-setuptools==52.0.0.post20210125
 sip==4.19.13
 six==1.16.0
 sniffio==1.2.0
